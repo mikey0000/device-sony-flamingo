@@ -17,6 +17,9 @@ TARGET_KERNEL_CONFIG := aosp_yukon_flamingo_defconfig
 # Kernel-headers flag
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
+# Use DEX pre-optimization
+WITH_DEXPREOPT := true
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/flamingo/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
