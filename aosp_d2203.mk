@@ -20,6 +20,9 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 # Use DEX pre-optimization
 WITH_DEXPREOPT := true
 
+# Disable DEX pre-optimization for prebuilts
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Boot Animation
 PRODUCT_COPY_FILES +=  \
     device/sony/flamingo/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
