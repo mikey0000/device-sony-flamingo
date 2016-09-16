@@ -38,3 +38,8 @@ PRODUCT_DEVICE := flamingo
 PRODUCT_MODEL := Xperia E3 (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+
+# OpenGApps
+GAPPS_VARIANT := pico
+GAPPS_FORCE_WEBVIEW_OVERRIDES := true
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
