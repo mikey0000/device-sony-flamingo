@@ -20,6 +20,10 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 # Use DEX pre-optimization
 WITH_DEXPREOPT := true
 
+# Boot Animation
+PRODUCT_COPY_FILES +=  \
+    device/sony/flamingo/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/flamingo/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
